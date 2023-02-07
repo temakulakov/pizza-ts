@@ -1,0 +1,89 @@
+.root {
+  width: 21%;
+  min-width: 220px;
+  transition: .5s ease all;
+  margin: 0 40px 40px 0;
+  height: 500px;
+  min-height: 420px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  ::selection {
+    background: rgba(255, 137, 55, 0.47);
+  }
+
+  ::-moz-selection {
+    background: rgba(255, 137, 55, 0.73);
+  }
+
+  &:nth-child(4n) {
+    margin: 0 0 40px 0;
+  }
+
+  .image {
+    width: 98%;
+    max-width: 277px;
+    margin-left: 13px;
+
+  }
+
+  .title {
+    font-size: 20px;
+    font-style: normal;
+    text-overflow: ellipsis;
+  }
+
+  .selector {
+
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .descriprion {
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 80px;
+  }
+
+  .button {
+    min-width: 40px;
+    background-color: #FEF1E6;
+    color: #D15800;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 5px 20px;
+    width: auto;
+    height: 30px;
+    font-size: 14px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #FFD2B3;
+    }
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}

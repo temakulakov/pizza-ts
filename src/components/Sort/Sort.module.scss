@@ -1,0 +1,62 @@
+.root {
+  margin-top: 7px;
+  .button {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 0 15px;
+    height: 36px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+
+    .arrow {
+      width: 15px;
+      height: 15px;
+      color: #FF8937;
+    }
+
+    .data {
+      font-size: 16px;
+      color: #FF8937;
+      font-weight: normal;
+      margin: 0 5px 0 5px;
+      border-bottom-width: 2px; /* Толщина линии внизу */
+      border-bottom-style: dotted; /* Стиль линии внизу */
+      border-bottom-color: #FF8937; /* Цвет линии внизу */
+    }
+  }
+
+  .menu {
+    position: absolute;
+    border-radius: 10px;
+    user-select: none;
+    width: 150px;
+    height: auto;
+    background-color: #F5F5F5;
+    margin-top: 10px;
+    padding: 0 15px;
+    z-index: 1;
+    .indicator {
+      width: 100%;
+      background-color: rgba(255, 137, 55, 0.47);
+      border-radius: 10px;
+      position: absolute;
+      height: 44px;
+      left: 0;
+      z-index: -111;
+    }
+    .item {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      z-index: 11199;
+      &.active {
+        color: #D15800;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.root {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 5px;
+    z-index: 999999;
+    position: sticky;
+    /* From https://css.glass */
+    background-color: #FFFFFF;
+
+  }
+  .content {
+      padding-top: 8px;
+    .headers {
+      font-size: 32px;
+      margin-top: 20px;
+    }
+    .grid {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  .animat_left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .animat_right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  .authorization {
+    opacity: 0;
+    margin-left: 8px;
+    min-width: 40px;
+    background-color: #FEF1E6;
+    color: #D15800;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 5px 20px;
+    width: auto;
+    height: 27px;
+    font-size: 14px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #FFD2B3;
+    }
+  }
+}

@@ -39,8 +39,8 @@ const Sort = (props) => {
         setSelectedCategory(index);
     }
 
-    return <motion.div className={styles.root} animate={props.headerStock ? {x: "8px"} : {x: "-25px"}}>
-        <Reorder.Group axis="x" onReorder={setListCategories} values={listCategories} whileHover={{scale: 1.05}} >
+    return <motion.div className={styles.root} animate={props.headerStock ? {x: "8px"} : {x: "-25px"}} whileHover={{scale: 1.05}}>
+        <motion.ul  >
             <motion.div
                 className={styles.hover_caret}
                 initial={{x: "0px", width: "0px"}}
@@ -62,15 +62,15 @@ const Sort = (props) => {
                     setIndicatorValues({x: indicatorX[index], width: indicatorWidth[index]});
                 }}
             >
-                <Reorder.Item key={category}  value={category}
+                <motion.li key={category}  value={category}
                                className={selectedCategory === index ? styles.active : ""}
                     >
                     <motion.span className={styles.text_span}>
                         {category}
                     </motion.span>
-                </Reorder.Item>
+                </motion.li>
             </motion.div>)}
-        </Reorder.Group>
+        </motion.ul>
 
     </motion.div>
 };
